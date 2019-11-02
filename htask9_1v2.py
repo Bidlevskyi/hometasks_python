@@ -28,8 +28,8 @@ def sysis(n, k):
                 del s[x]
                 s.insert(x, a1[p])
     res = str(''.join(str(x) for x in s))
-    print(res)
+    return(res)
 
 n = int(input('Enter volume = '))
 k = int(input('Enter system = '))
-sysis(n, k)
+print(sysis(n, k))
