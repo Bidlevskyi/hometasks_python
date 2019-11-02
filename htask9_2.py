@@ -21,3 +21,18 @@ def shift(lst, steps):
 nums = [4, 5, 6, 7, 8, 9, 0]
 
 '''
+def sdig(n, r = 1, m = False):
+    lst = list(map(int, str(n)))
+    if m is False:
+        for i in range(r):
+            lst.append(lst.pop(i))
+        nn = str(''.join(str(x) for x in lst))
+        return(nn)
+
+n = int(input('n = '))
+r = int(input('r =' ))
+print(sdig(n, r))
+
+
+
+
