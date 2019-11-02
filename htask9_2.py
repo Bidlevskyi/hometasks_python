@@ -19,5 +19,9 @@ def shift(lst, steps):
  
  
 nums = [4, 5, 6, 7, 8, 9, 0]
-
 '''
+
+def sdig(n, i = 1, r = False)
+    ns = n.split()
+    if r == False:
+
