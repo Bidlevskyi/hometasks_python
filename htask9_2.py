@@ -6,22 +6,23 @@
  1 разряд), 3-й булевский параметр задаёт направление сдвига (по умолчанию
  влево (False)).
 '''
-'''
-example
-def shift(lst, steps):
-    if steps < 0:
-        steps = abs(steps)
-        for i in range(steps):
+
+def sdig(n, r = 1, m = False):
+    lst = list(map(int, str(n)))
+    if m == False:
+        for i in range(r):
             lst.append(lst.pop(0))
     else:
-        for i in range(steps):
-            lst.insert(0, lst.pop())
- 
- 
-nums = [4, 5, 6, 7, 8, 9, 0]
-'''
+        for i in range(r):
+            lst.insert(0, lst.pop(-1))
+    nn = str(''.join(str(x) for x in lst))
+    return(nn)
 
-def sdig(n, i = 1, r = False)
-    ns = n.split()
-    if r == False:
+n = int(input('Введите число: '))
+r = int(input('Введите количество разрядов для сдвига ' ))
+m = bool(input('Введите направление сдвига(0 - влево, 1 - вправо)'))
+print(sdig(n, r, m))
+
+
+
 
