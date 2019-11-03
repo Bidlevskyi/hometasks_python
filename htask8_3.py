@@ -4,13 +4,15 @@
   лето или осень).
 '''
 def season(m):
+
     if m in [1, 2, 12]:
-        print('winter')
+         return('wintera')
     elif m in [3, 4, 5]:
-        print('sping')
+        return('sping')
     elif m in [6, 7, 8]:
-        print('summer')
+        return('summer')
     elif m in [9, 10, 11]:
-        print('autumn')
+        return('autumn')
 m = int(input('Enter mouth: '))
-season(m)
+print(season(m))
+
