@@ -8,7 +8,8 @@
 def bank(a, years):
     for _ in range(1, years):
         a *= 1.1
-    print('к концу срока на счету буден: ', a, ' грн')
+    return(a)
 a = float(input('Введите начальную сумму вклада: '))
 years = int(input('Введите срок, на который будет ввнесен вклад: '))
-bank(a, years)
+print('к концу срока на счету буден: ', bank(a, years), ' грн')
+
