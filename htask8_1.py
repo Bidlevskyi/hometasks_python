@@ -6,16 +6,16 @@
 '''
 def arithmetic(a, b, c):
     if c == '+':
-        print(a, '+', b, '=', a + b)
+        return(a + b)
     elif c == '-':
-        print(a, '-', b, '=', a - b)
+        return(a - b)
     elif c == '*':
-        print(a, '*', b, '=', a * b)
+        return(a * b)
     elif c == '/':
-        print(a, '/', b, '=', a / b)
+        return(a / b)
     else:
-        print('Неизвестная операция')
+        return('Неизвестная операция')
 a = int(input('a = '))
 b = int(input('b = '))
 c = input("Введите операцию: ")
-arithmetic(a, b, c)
+print(arithmetic(a, b, c))

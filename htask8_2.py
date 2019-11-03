@@ -5,12 +5,12 @@
 '''
 def is_year_leap(g):
     if (g % 4 == 0) and (g % 100 != 0):
-        print('True')
+        return('True')
     elif (g % 400 == 0):
-        print('True')
+        return('True')
     else:
-        print('False')
+        return('False')
 g = int(input('Enter year: '))
-is_year_leap(g)
+print(is_year_leap(g))
 
 
